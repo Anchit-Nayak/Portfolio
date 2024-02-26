@@ -5,16 +5,10 @@ import ProjectCardLarge from './ProjectCardLarge';
 const Projects = () => {
     const MyProjects = [
       {
-        topic: "Spendr",
-        projectLink: "https://github.com/Anchit-Nayak/Verve",
-        link: "https://google.com",
-        skills: ["Next.js", "TailwindCSS", "Postgres", "Prisma"],
-        description: "A Wallet that helps you send and receive money with ease as well as keep track of your expenses."
-      },
-      {
         topic: "Verve",
         projectLink: "https://github.com/Anchit-Nayak/Verve",
-        link: "https://google.com",
+        link: "",
+        pic:"https://i.postimg.cc/s2j7FT7b/Screenshot-from-2024-02-14-01-23-14.png",
         skills: ["ReactJS", "TailwindCSS", "Express", "NodeJS", "MongoDB"],
         description: "A dynamic blog platform crafted with the MERN stack and FalconAI integration."
       },
@@ -22,6 +16,7 @@ const Projects = () => {
         topic: "AgroInvest",
         projectLink: "https://github.com/Anchit-Nayak/AgroInvest-Frontend",
         link: "",
+        pic:"https://i.postimg.cc/XY1bnhd5/Screenshot-from-2024-02-14-00-50-10.png",
         skills: ["ReactJS", "TailwindCSS", "Express", "NodeJS", "MongoDB"],
         description: "A platform that connects farmers with investors to help them grow their business."
       },
@@ -33,7 +28,7 @@ const Projects = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
       {
         MyProjects.map((project, index) => {
-          return <ProjectCard key={index} topic={project.topic} projectLink={project.projectLink} link={project.link} skills={project.skills} description={project.description} />
+          return <ProjectCard key={index} topic={project.topic} projectLink={project.projectLink} link={project.link} pic={project.pic} skills={project.skills} description={project.description} />
         })
       }
       {/* {

@@ -5,6 +5,9 @@ import Projects from './components/Projects'
 import Navbar from './components/Navbar'
 import { useEffect } from 'react';
 import Reveal from './Reveal';
+import Page from './components/Page';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -13,7 +16,7 @@ function App() {
       loader.style.display = "none";
     }, 2900);
   }, []);
-  const componentsToRender = [<About/>, <Projects/>];
+  const componentsToRender = [<About/>, <Projects/>, <Contact/>];
   return (
     <div className='w-full h-full'>
       <div id="preloader">
@@ -21,9 +24,9 @@ function App() {
           <h2 className="text text-9xl" data-fill-text="AN.">AN.</h2>
         </div>
       </div>
-    <div className='wrapper-container my-4 flex flex-col gap-52'>
+    <div className='wrapper-container my-9 flex flex-col'>
       <Navbar/>
-      <Hero/>
+      <Page/>
       {
         componentsToRender.map((section, i) => {
           return (
@@ -34,6 +37,7 @@ function App() {
         })
       }
     </div>
+    <Footer/>
     </div>
   )
 }

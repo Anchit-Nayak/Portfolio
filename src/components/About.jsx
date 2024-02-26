@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => {
-  const skills = ['JavaScript', 'TypeScript', 'Next', 'React', 'Node.js', 'Postgres', 'MongoDB', 'Solidity'];
+  const skills = ['JavaScript', 'TypeScript', 'Next', 'React', 'Node.js', 'Postgres', 'MongoDB', 'Prisma'];
 
   return (
     <div id="About" className="wrapper-container mb-30 mt-10">
@@ -9,11 +9,11 @@ const About = () => {
       <div className="flex flex-col lg:flex-row gap-20 justify-between">
         <div className="prose lg:text-lg lg:w-2/3">
           <p>
-            Hello! My name is Anchit. I am a tech enthusiast who loves to learn and try out new things, a self-taught developer, a Web3 believer, and a competitive programmer with strong logical thinking and problem solving ability.
+            Hello! My name is Anchit. I am a tech enthusiast who loves to learn and try out new things, a self-taught developer, a Web3 believer with strong logical thinking and problem solving ability.
           </p>
           <br />
           <p>
-            I am a versatile developer specializing in full stack web development and blockchain technologies, dedicated to creating high-performance applications while actively contributing to open source projects to enhance existing solutions.
+            I am a versatile developer specializing in full stack web development dedicated to creating high-performance applications while actively contributing to open source projects to enhance existing solutions.
           </p>
           <br />
           <p>Here are a few technologies I’ve been working with recently:</p>

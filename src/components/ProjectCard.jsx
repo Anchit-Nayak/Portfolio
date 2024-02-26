@@ -3,7 +3,7 @@ import Skill from "./Skill";
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
 
-export function ProjectCard({ topic, projectLink, link, skills, description }) {
+export function ProjectCard({ topic, projectLink, link, pic, skills, description }) {
   return (
     <div className="group relative h-auto w-full flex items-center justify-center transform transition-transform duration-500 border border-gray-500 p-3 rounded-2xl">
       <div className="absolute inset-0 flex items-center justify-center w-full h-full opacity-0 z-0 group-hover:z-10 group-hover:opacity-100 group-hover:backdrop-filter group-hover:backdrop-blur-sm rounded-2xl gap-7">
@@ -35,7 +35,7 @@ export function ProjectCard({ topic, projectLink, link, skills, description }) {
             }
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4">
-            <img src="https://i.postimg.cc/s2j7FT7b/Screenshot-from-2024-02-14-01-23-14.png" alt="" className=" object-cover rounded-lg" />
+            <img src={pic} alt="" className=" object-cover rounded-lg" />
           </div>
         </div>
       </div>
