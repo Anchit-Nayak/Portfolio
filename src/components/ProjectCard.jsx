@@ -1,10 +1,23 @@
 import React from "react";
 import Skill from "./Skill";
+import { FaGithub } from "react-icons/fa";
+import { MdOpenInNew } from "react-icons/md";
 
-export function ProjectCard({topic, link, skills, description}) {
+export function ProjectCard({ topic, projectLink, link, skills, description }) {
   return (
-    <div className="h-[29rem] md:h-[34rem] w-full flex items-center justify-center transform transition-transform duration-500 hover:scale-105 hover:shadow-lg border border-gray-500 p-3 rounded-2xl lg:hidden">
-      <div className="w-full py-3">
+    <div className="group relative h-auto w-full flex items-center justify-center transform transition-transform duration-500 border border-gray-500 p-3 rounded-2xl">
+      <div className="absolute inset-0 flex items-center justify-center w-full h-full opacity-0 z-0 group-hover:z-10 group-hover:opacity-100 group-hover:backdrop-filter group-hover:backdrop-blur-sm rounded-2xl gap-7">
+        {
+          projectLink &&
+          <a href={projectLink} target="_blank" rel="">
+            <FaGithub className="text-5xl " />
+          </a>
+        }
+        { link && <a href={link} target="_blank" rel="">
+          <MdOpenInNew className="text-5xl" />
+        </a>}
+      </div>
+      <div className="w-full z-10 group-hover:z-0">
         <div className="flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-auto h-auto">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
             {topic}
@@ -22,10 +35,10 @@ export function ProjectCard({topic, link, skills, description}) {
             }
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4">
-            <img src="https://i.postimg.cc/s2j7FT7b/Screenshot-from-2024-02-14-01-23-14.png" alt="" className=" object-cover rounded-lg"/>
+            <img src="https://i.postimg.cc/s2j7FT7b/Screenshot-from-2024-02-14-01-23-14.png" alt="" className=" object-cover rounded-lg" />
           </div>
         </div>
-        </div>
+      </div>
     </div>
   );
 }

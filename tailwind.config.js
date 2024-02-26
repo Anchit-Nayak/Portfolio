@@ -7,6 +7,7 @@ export default {
   ],
   theme: {
       extend: {
+        display: ["group-hover"],
         animation: {
           shimmer: "shimmer 2s linear infinite",
         },
