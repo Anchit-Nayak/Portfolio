@@ -1,4 +1,5 @@
 import React from "react";
+import scrollToTarget from "../scrollToTarget";
 
 const Navbar = () => {
   return (
@@ -8,13 +9,13 @@ const Navbar = () => {
           <h1 className="text-3xl font-bold hover:cursor-pointer">AN.</h1>
           <ul className="hidden md:flex gap-8">
             <li className="cursor-pointer hover:text-gray-500 transition-transform duration-100 transform hover:scale-110">
-              <a href="#About">About</a>
+              <a href="" onClick={() => scrollToTarget('About')}>About</a>
             </li>
             <li className="cursor-pointer  hover:text-gray-500 transition-transform duration-100 transform hover:scale-110">
-              <a href="#Projects">Projects</a>
+              <a href="" onClick={() => scrollToTarget('Projects')}>Projects</a>
             </li>
             <li className="cursor-pointer hover:text-gray-500 transition-transform duration-100 transform hover:scale-110">
-              <a href="#Contact">Contact</a>
+              <a href="" onClick={() => scrollToTarget('Contact')}>Contact</a>
             </li>
           </ul>
         </div>

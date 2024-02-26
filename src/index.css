@@ -13,7 +13,6 @@ body{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   color : rgb(243 244 246);
   overflow-x: hidden;
-  scroll-snap-stop: always;
 }
 
 html {

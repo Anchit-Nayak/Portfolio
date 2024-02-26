@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { motion } from 'framer-motion';
-
+import scrollToTarget from "../scrollToTarget";
 import useDatGui from '../hooks/useDatGui'
 
 import useStore from '../helpers/store'
@@ -108,15 +108,26 @@ const Page = () => {
                 I wield code to create wonders.
               </div>
 
-              <div className=" text-ellipsis text-center text-gray-400 text-sm lg:text-lg px-3 lg:px-0">
+              <div className=" max-w-2xl flex w-full items-center text-gray-100 text-sm lg:text-lg px-3 lg:px-0">
                 Driven software engineer with a passion for learning, a problem-solving mindset, and expertise in delivering innovative and efficient software products.
               </div>
             </motion.div>
-            <a href="#About" class="absolute inset-0 z-30 bottom-0 flex w-full justify-center top-44 lg:top-80">
+
+            <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 }
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.7, delay: 4.2 }}
+            >
+            <a href="" onClick={() => scrollToTarget('About')} class="absolute inset-0 z-30 bottom-0 flex w-full justify-center top-44 lg:top-80">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 text-white mt-52 animate-bounce">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
               </svg>
             </a>
+            </motion.div>
 
           </div>
 

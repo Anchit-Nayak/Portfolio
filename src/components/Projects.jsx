@@ -4,6 +4,14 @@ import ProjectCardLarge from './ProjectCardLarge';
 
 const Projects = () => {
     const MyProjects = [
+      // {
+      //   topic: "ChatApp",
+      //   projectLink: "https://github.com/Anchit-Nayak/ChatApp",
+      //   link: "",
+      //   pic:"https://i.postimg.cc/s2j7FT7b/Screenshot-from-2024-02-14-01-23-14.png",
+      //   skills: ["ReactJS","Socket.io", "Redis", "Postgres", "Express", "Formik","Yup"],
+      //   description: "A real-time chat application with a user-friendly interface and a secure authentication system.",
+      // },
       {
         topic: "Verve",
         projectLink: "https://github.com/Anchit-Nayak/Verve",
@@ -18,7 +26,7 @@ const Projects = () => {
         link: "",
         pic:"https://i.postimg.cc/XY1bnhd5/Screenshot-from-2024-02-14-00-50-10.png",
         skills: ["ReactJS", "TailwindCSS", "Express", "NodeJS", "MongoDB"],
-        description: "A platform that connects farmers with investors to help them grow their business."
+        description: "A platform that connects farmers with investors to help them grow their business and reach potential Investors to sell their crop."
       },
     ];
   return (

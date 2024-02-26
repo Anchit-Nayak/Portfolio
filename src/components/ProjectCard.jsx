@@ -27,7 +27,7 @@ export function ProjectCard({ topic, projectLink, link, pic, skills, description
               {description}
             </span>
           </div>
-          <div className="w-full flex flex-row gap-2 mt-3 auto-rows-auto">
+          <div className="w-full flex flex-wrap gap-2 mt-3 auto-rows-auto">
             {
               skills.map((skill, index) => {
                 return <Skill key={index} tech={skill} />
