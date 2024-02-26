@@ -23,13 +23,13 @@ const Navbar = () => {
 
 
         <div className="flex items-center gap-8">
-          <a
+          {/* <a
             href=""
             target="_blank"
             className="px-4 py-2 bg-black text-white rounded-md text-sm font-medium hover:bg-gray-100 hover:text-gray-900 transition-transform duration-500 transform"
           >
             Resume
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
