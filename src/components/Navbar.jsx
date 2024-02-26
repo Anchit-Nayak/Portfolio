@@ -3,9 +3,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <section className="flex justify-center w-screen absolute top-0 left-0 z-50">
-      <div className="flex items-center justify-between w-full py-4 px-6 lg:px-52">
+      <div className="flex items-center justify-between w-full py-4 wrapper-container">
         <div className="flex items-center gap-8">
-          <h1 className="text-3xl font-bold mr-9">AN.</h1>
+          <h1 className="text-3xl font-bold hover:cursor-pointer">AN.</h1>
           <ul className="hidden md:flex gap-8">
             <li className="cursor-pointer hover:text-gray-500 transition-transform duration-100 transform hover:scale-110">
               <a href="#About">About</a>

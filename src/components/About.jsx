@@ -4,7 +4,7 @@ const About = () => {
   const skills = ['JavaScript', 'TypeScript', 'Next', 'React', 'Node.js', 'Postgres', 'MongoDB', 'Prisma'];
 
   return (
-    <div id="About" className="wrapper-container mb-30 mt-10">
+    <div id="About" className="wrapper-container">
       <h2 className="text-3xl lg:text-4xl font-bold mb-3">About Me</h2>
       <div className="flex flex-col lg:flex-row gap-20 justify-between">
         <div className="prose lg:text-lg lg:w-2/3">

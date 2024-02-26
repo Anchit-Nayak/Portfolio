@@ -22,7 +22,7 @@ const Projects = () => {
       },
     ];
   return (
-    <div id="Projects" className="py-9 mt-[100px]">
+    <div id="Projects" className="wrapper-container">
     <h2 className="text-3xl lg:text-4xl font-bold mb-9">Projects I've Built</h2>
 
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
