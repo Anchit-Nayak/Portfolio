@@ -5,7 +5,7 @@ import { FiMail } from 'react-icons/fi'
 
 const Contact = () => {
   return (
-    <div id="Contact" className='flex flex-col items-center justify-center wrapper-container'>
+    <div id="Contact" className='flex flex-col items-center justify-center wrapper-container mb-56'>
       <h2 className="font-bold text-gray-300">What's Next?</h2>
       <h2 className="text-3xl lg:text-4xl font-bold mb-3">Get In Touch</h2>
       <h2 className=' max-w-xl text-center mb-3'>Whether you have a question or just want to say hi, my inbox is always open. I’ll try my best to get back to you!</h2>

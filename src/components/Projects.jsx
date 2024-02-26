@@ -22,7 +22,7 @@ const Projects = () => {
       },
     ];
   return (
-    <div id="Projects" className="wrapper-container">
+    <div id="Projects" className="wrapper-container mb-56">
     <h2 className="text-3xl lg:text-4xl font-bold mb-9">Projects I've Built</h2>
 
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">

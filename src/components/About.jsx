@@ -4,7 +4,7 @@ const About = () => {
   const skills = ['JavaScript', 'TypeScript', 'Next', 'React', 'Node.js', 'Postgres', 'MongoDB', 'Prisma'];
 
   return (
-    <div id="About" className="wrapper-container">
+    <div id="About" className="wrapper-container mb-56">
       <h2 className="text-3xl lg:text-4xl font-bold mb-3">About Me</h2>
       <div className="flex flex-col lg:flex-row gap-20 justify-between">
         <div className="prose lg:text-lg lg:w-2/3">
@@ -26,7 +26,7 @@ const About = () => {
 
         <div className='flex lg:w-1/2 h-full items-center justify-center'>
           <div className="flex items-center justify-center">
-            <img src="src/assets/me.jpeg" alt="" className="object-cover h-[30rem] w-[25rem] rounded-2xl
+            <img src="https://i.postimg.cc/nrfwKYcv/me.jpg" alt="" className="object-cover h-[30rem] w-[25rem] rounded-2xl
              grayscale hover:grayscale-0 hover:-translate-x-1 hover:-translate-y-1 duration-300 mb-3"/>
           </div>
 
