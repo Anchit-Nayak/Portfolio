@@ -1,3 +1,5 @@
+import { BufferGeometryLoader } from 'three'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -30,5 +32,30 @@ export default {
         }
       },
   },
-  plugins: [require('tailwind-scrollbar-daisyui'),]
+  plugins: [
+    function({ addUtilities }){
+      const newUtilities = {
+        ".scrollbar-thin": {
+          scrollbarWidth: "thin",
+          scrollbarColor: "rgb(55, 65, 81) black"
+        },
+        ".scrollbar-webkit":{
+          "&::-webkit-scrollbar": {
+            width: "8px",
+            height: "5px"
+          },
+          "&::-webkit-scrollbar-track": {
+            backgroundColor: "rgb(0, 0, 0)"
+          }, 
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "rgb(55, 65, 81)",
+            borderRadius: "20px",
+            border: `3px solid rgb(55, 65, 81)`
+          }
+        } 
+      }
+
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    }
+  ]
 }

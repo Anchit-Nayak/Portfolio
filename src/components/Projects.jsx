@@ -16,7 +16,7 @@ const Projects = () => {
         topic: "Verve",
         projectLink: "https://github.com/Anchit-Nayak/Verve",
         link: "",
-        pic:"https://i.postimg.cc/s2j7FT7b/Screenshot-from-2024-02-14-01-23-14.png",
+        pic:"https://i.postimg.cc/yYBxxjYW/Screenshot-from-2024-02-29-01-29-24.png",
         skills: ["ReactJS", "TailwindCSS", "Express", "NodeJS", "MongoDB"],
         description: "A dynamic blog platform crafted with the MERN stack and FalconAI integration."
       },

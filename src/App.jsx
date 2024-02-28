@@ -13,12 +13,13 @@ function App() {
   useEffect(() => {
     const loader = document.getElementById("preloader");
     setTimeout(() => {
+      document.body.style.overflowY = 'auto';
       loader.style.display = "none";
     }, 2900);
   }, []);
   const componentsToRender = [<About/>, <Projects/>, <Contact/>];
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full !scroll-smooth'>
       <div id="preloader">
         <div>
           <h2 className="text text-9xl" data-fill-text="AN.">AN.</h2>
