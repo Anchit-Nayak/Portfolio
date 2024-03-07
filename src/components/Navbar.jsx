@@ -3,7 +3,7 @@ import scrollToTarget from "../scrollToTarget";
 
 const Navbar = () => {
   return (
-    <section className="flex justify-center w-screen absolute top-0 left-0 z-50">
+    <section className="flex justify-center w-screen absolute top-0 left-0 z-50 mix-blend-difference">
       <div className="flex items-center justify-between w-full py-4 wrapper-container">
         <div className="flex items-center gap-8">
           <h1 className="text-3xl font-bold hover:cursor-pointer">AN.</h1>

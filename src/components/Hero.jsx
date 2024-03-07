@@ -5,7 +5,7 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Hero = () => {
   return (
-    <div className="mb-44 w-full">
+    <div className="mb-44 w-full" id="Hero">
       <div className="flex justify-center items-center h-screen w-full">
         <div className="flex w-full flex-col gap-2 text-center justify-center text-xl h-full lg:h-full">
           <div className='absolute inset-0 z-10 flex flex-col justify-center items-center'>

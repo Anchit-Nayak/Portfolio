@@ -132,9 +132,17 @@ const Page = () => {
           </div>
 
 
-          <div className='absolute inset-0 z-20 w-full h-full flex justify-center items-center'>
+          <motion.div className='absolute inset-0 z-20 w-full h-full flex justify-center items-center'
+          variants={{
+            hidden: { opacity: 0, y: 195 },
+            visible: { opacity: 1, y: 0 }
+          }}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 1.5, delay: 4.2 }}
+          >
             <Scene />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
