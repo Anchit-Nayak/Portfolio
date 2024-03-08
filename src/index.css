@@ -72,6 +72,19 @@ body{
   background: #555;
 }
 
+@keyframes compression {
+  0% {
+    letter-spacing: 0.05em;
+  }
+  100% {
+    letter-spacing: -0.05em; 
+  }
+}
 
+.animate-compression {
+  animation-name: compression;
+  animation-duration: 1.5s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
 
-      

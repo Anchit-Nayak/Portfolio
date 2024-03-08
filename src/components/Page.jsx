@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState , useEffect} from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { motion } from 'framer-motion';
@@ -10,11 +10,11 @@ import { vertexShader, fragmentShader } from '../helpers/shaders'
 
 // Default settings
 const settings = {
-  speed: 0.1,
+  speed: 0.07,
   density: 1.5,
   strength: 0.2,
   frequency: 1.0,
-  amplitude: 6.0,
+  amplitude: 7.0,
   intensity: 7.0,
   wireframe: false,
 }
@@ -67,15 +67,13 @@ const Page = () => {
     return (
       <Canvas
         camera={{
-          position: [0, 0, 3],
+          position: [0, 0, 1.1],
         }}
       >
         <Icosahedron position={[0, 0, 0]} />
-        <OrbitControls />
       </Canvas>
     )
   }
-
   return (
     <div className="mb-44 w-full">
       <div className="flex justify-center items-center h-screen w-full">
@@ -91,7 +89,8 @@ const Page = () => {
               animate="visible"
               transition={{ duration: 0.7, delay: 3.2 }}
             >
-              <h1 class="tracking-tighter text-center text-5xl py-4 lg:py-4 md:py-5 sm:py-2 lg:text-9xl text-transparent duration-5000 bg-white cursor-default text-edge-outline animate-title font-inter sm:text-6xl md:text-7xl whitespace-nowrap bg-clip-text font-bold text-shadow-2xl shadow-black">Anchit Nayak.</h1>
+              <h1 className='text-center text-5xl py-4 lg:py-4 md:py-5 sm:py-2 lg:text-9xl text-transparent duration-5000 bg-white cursor-default text-edge-outline animate-title font-inter sm:text-6xl md:text-7xl whitespace-nowrap bg-clip-text font-bold text-shadow-2xl
+               shadow-black animate-compression tracking-wider'>Anchit Nayak.</h1>
             </motion.div>
 
 
