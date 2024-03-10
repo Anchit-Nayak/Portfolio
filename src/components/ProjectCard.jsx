@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Skill from "./Skill";
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
+import SkeletonCard from './SkeletonCard'
 
 export function ProjectCard({ topic, projectLink, link, pic, skills, description }) {
+  const [isImageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoaded = () =>{
+      setImageLoaded(true);
+  }
+
+  useEffect(() => {
+    // setTimeout( () => {
+    const img = new Image();
+    img.src = pic;
+    img.onload = () => setImageLoaded(true);
+    // }, 4000)
+  }, [pic]);
+
+
   return (
-    <div className="group relative h-auto w-full flex items-center justify-center transform transition-transform duration-500 border border-gray-500 p-3 rounded-2xl">
+    <>
+    {!isImageLoaded && <SkeletonCard />}
+    {isImageLoaded && (
+    <div className={`group relative h-auto w-full flex items-center justify-center transform transition-transform duration-500 border border-gray-500 p-3 rounded-2xl`}>
       <div className="absolute inset-0 flex items-center justify-center w-full h-full opacity-0 z-0 group-hover:z-10 group-hover:opacity-100 group-hover:backdrop-filter group-hover:backdrop-blur-sm rounded-2xl gap-7">
         {
           projectLink &&
@@ -35,10 +54,11 @@ export function ProjectCard({ topic, projectLink, link, pic, skills, description
             }
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4">
-            <img src={pic} alt="" className=" object-cover rounded-lg" />
+            <img src={pic} alt="" onLoad={handleImageLoaded} className=" object-cover rounded-lg" />
           </div>
         </div>
       </div>
-    </div>
+    </div>)}
+    </>
   );
 }

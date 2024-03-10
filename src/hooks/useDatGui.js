@@ -31,7 +31,6 @@ const useDatGui = (settings) => {
     //   const onClick = (value) => set({ ...options, wireframe: value })
 
     //   folder4.add(settings, 'wireframe').name('wireframe').onChange(onClick)
-    console.log("hello");
   }, [])
 
   return options

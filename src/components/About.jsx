@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import ImageSkeleton from './ImageSkeleton';
 
 const About = () => {
   const skills = ['TypeScript', 'Next.js', 'React', 'Node.js', 'Postgres', 'MongoDB', 'Prisma', 'Cloudflare'];
+  const [isLoaded, setIsLoaded] = useState(false);
+  const pic = "https://i.postimg.cc/nrfwKYcv/me.jpg"
 
+  useEffect(() => {
+    // setTimeout( () => {
+    const img = new Image();
+    img.src = pic;
+    img.onload = () => setIsLoaded(true);
+    // }, 4000)
+  }, [pic]);
   return (
     <div id="About" className="wrapper-container mb-72 relative">
       <h2 className="text-3xl lg:text-4xl font-bold mb-3">About Me</h2>
@@ -26,8 +36,12 @@ const About = () => {
         <div className="lg:w-1/2 h-full lg:absolute lg:top-[2rem] lg:-right-[5rem] lg:flex lg:items-center lg:justify-center">
           <div className="flex items-center justify-center group mt-[1rem]">
             <div className="border-2 border-gray-500 h-[22rem] w-[20rem] lg:h-[25rem] lg:w-[22rem] group-hover:border-white group-hover:translate-x-1 group-hover:translate-y-1 duration-500">
+              {!isLoaded && <ImageSkeleton/>}
+              { isLoaded && 
               <img src="https://i.postimg.cc/nrfwKYcv/me.jpg" alt="" className="object-cover h-[22rem] w-[20rem] lg:h-[25rem] lg:w-[22rem] grayscale group-hover:grayscale-0 group-hover:-translate-x-2 group-hover:-translate-y-2 duration-300 -mt-[1rem] -ml-[1rem]"/>
+              }
               <div className="w-full h-full bg-transparent"></div> {/* This div ensures the absolute div has content */}
+              
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { ProjectCard } from './ProjectCard';
 import ProjectCardLarge from './ProjectCardLarge';
+import SkeletonCard from './SkeletonCard';
 
 const Projects = () => {
     const MyProjects = [
@@ -39,11 +40,6 @@ const Projects = () => {
           return <ProjectCard key={index} topic={project.topic} projectLink={project.projectLink} link={project.link} pic={project.pic} skills={project.skills} description={project.description} />
         })
       }
-      {/* {
-        MyProjects.map((project, index) => {
-          return <ProjectCardLarge key={index} topic={project.topic} link={project.link} skills={project.skills} description={project.description} />
-        })
-      } */}
     </div>
   </div>
   )
