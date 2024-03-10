@@ -121,7 +121,7 @@ const Page = () => {
             animate="visible"
             transition={{ duration: 0.7, delay: 4.2 }}
             >
-            <a href="" onClick={() => scrollToTarget('About')} className="absolute inset-0 z-30 bottom-0 flex w-full justify-center top-44 lg:top-80">
+            <a href="" onClick={() => scrollToTarget('About')} className="absolute inset-0 z-30 flex w-full justify-center top-24 lg:top-56">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-9 h-9 text-white mt-52 animate-bounce">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
               </svg>
