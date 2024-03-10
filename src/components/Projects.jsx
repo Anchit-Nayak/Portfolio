@@ -25,7 +25,7 @@ const Projects = () => {
         topic: "AgroInvest",
         projectLink: "https://github.com/Anchit-Nayak/AgroInvest-Frontend",
         link: "",
-        pic:"https://i.postimg.cc/XY1bnhd5/Screenshot-from-2024-02-14-00-50-10.png",
+        pic:"https://i.postimg.cc/q7QFrZYK/Screenshotfrom2024-02-1400-50-1.jpg",
         skills: ["ReactJS", "TailwindCSS", "Express", "NodeJS", "MongoDB"],
         description: "A platform that connects farmers with investors to help them grow their business and reach potential Investors to sell their crop."
       },
